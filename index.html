@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc nghiệm thứ tự ưu tiên phép tính</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+    <div id="stats">
+        Số câu đúng: <span id="correct">0</span> / 
+        Tổng số câu: <span id="total">0</span> 
+        (Tỷ lệ: <span id="percentage">0%</span>)
+    </div>
+    <div id="question-container">
+        Phép tính nào được ưu tiên trong biểu thức: <span id="math-expression"></span>?
+    </div>
+    <div id="options-container"></div>
+    <button id="startButton" onclick="startQuiz()">Bắt đầu</button>
+    <button id="checkButton" onclick="checkAnswer()" disabled>Kiểm tra</button>
+    <button id="nextButton" onclick="generateQuestion()" disabled>Câu tiếp theo</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
